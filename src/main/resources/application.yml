@@ -1,0 +1,49 @@
+#spring:
+#  profiles:
+#    active: ${SPRING_PROFILES_ACTIVE:dev}
+#  application:
+#      name: auth-server
+#
+#  jpa:
+#    open-in-view: true
+#    database: POSTGRESQL
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+#  datasource:
+#    platform: postgres
+#    url: jdbc:postgresql://192.168.1.140:5432/auth
+#    username: wang
+#    password: yunfei
+#    driver-class-name: org.postgresql.Driver
+#  redis:
+#    host: 192.168.1.140
+
+server:
+  port: 9999
+  address: 127.0.0.1
+
+# SPRING PROFILES
+spring:
+    # HTTP ENCODING
+    http:
+        encoding.charset: UTF-8
+        encoding.enable: true
+        encoding.force: true
+#    mvc:
+#        view.prefix: /jsp/
+#        view.suffix: .jsp
+    #jpa配置
+#    jpa:
+#        database: mysql
+#        generate-ddl: true
+#        show-sql: true
+#        hibernate:
+#          ddl-auto: update
+#          naming:
+#            physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+
+
+logging.level.org.springframework.security: DEBUG
+
+logging.leve.org.springframework: DEBUG
